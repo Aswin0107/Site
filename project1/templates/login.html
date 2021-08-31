@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loginpage</title>
+</head>
+<body style="text-align:center;background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVpD6hf0sFE9Mj9KupM89c8MIPCjn8_td9iA&usqp=CAU')">
+<h1 style="text-align:center">Login Here</h1>
+<form action="login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="enter your name"><br><br>
+    <input type="password" name="password" placeholder="enter your password"><br><br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+</head>
+<body style="text-align:center;background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbuTR-6Q6j5AcwQQwrZahts_qnBTYHy2NG0w&usqp=CAU')">
+<h1 style="text-align:center">Registration Page</h1>
+<form action="register" method="post">
+    {% csrf_token %}
+<input type="text" name="username" placeholder="enter the username"><br>
+<input type="text" name="firstname" placeholder="enter the firstname"><br>
+<input type="text" name="lastname" placeholder="enter the lastname"><br>
+<input type="email" name="email" placeholder="enter the mailid"><br>
+<input type="password" name="password" placeholder="enter the password"><br>
+<input type="password1" name="password1" placeholder="enter the password"><br>
+<input type="submit">
+</form>
+{% for i in messages %}
+{{i}}
+{% endfor %}
+</body>
+</html>
